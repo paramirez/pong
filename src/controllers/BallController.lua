@@ -6,8 +6,8 @@ local function resetBall(player)
     ball.velocity = ball.initialVelocity
     ball.left = not ball.left
     ball.top = not ball.top
-    ball.x = love.graphics.getWidth() / 2
-    ball.y = love.graphics.getHeight() / 2
+    ball.x = halfWindowWidth
+    ball.y = halfWindowHeight
 end
 
 local function initializeRebound()

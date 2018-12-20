@@ -6,8 +6,8 @@ local function createBall(radius, velocity, incrementVelocity, x, y)
     ball.velocity = velocity;
     ball.initialVelocity = velocity;
     ball.incrementVelocity = incrementVelocity;
-    ball.x = x and x or love.graphics.getWidth() / 2;
-    ball.y = y and y or love.graphics.getHeight() / 2;
+    ball.x = x and x or halfWindowWidth;
+    ball.y = y and y or halfWindowHeight;
     ball.left = true;
     ball.top = true;
     ball.updatePositionBall = function(ball)
