@@ -46,6 +46,6 @@ function love.resize(w, h)
     halfWindowWidth = windowWidth / 2
     halfWindowHeight = windowHeight / 2
     for key, player in pairs(players) do
-        player.setPosition(player, true);
+        player.setPosition(player, true)
     end
 end
